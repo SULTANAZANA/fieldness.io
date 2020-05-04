@@ -1,0 +1,141 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+
+
+.imagebg {
+  position: absolute;
+  opacity: 1;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+.tex {
+  z-index: 10;
+  opacity:0.7;
+}
+
+.the {
+  position: absolute;
+  opacity: 1;
+  z-index: 20;
+  animation-name: thee;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes thee{
+  0% { opacity: 1; }
+  67% {opacity: 1; }
+  69% {opacity: 0; }
+  100% {opacity: 0; }
+}
+.delay{
+  position: absolute;
+  animation-name: del;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 30
+}
+
+@keyframes del{
+  0% { opacity: 1; }
+  18%{opacity: 1;}
+  20% {opacity: 0; }
+  67% {opacity: 0; }
+  69% {opacity: 1; }
+  100% {opacity: 1; }
+
+}
+
+
+.visible1 {
+  position: absolute;
+  opacity: 1;
+  z-index: 20;
+  animation-name: art;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes art{
+  0% { opacity: 0; }
+  45% {opacity: 0; }
+  47% {opacity: 1; }
+  67% {opacity: 1; }
+  69% {opacity: 0; }
+  100% {opacity: 0; }
+}
+
+
+.visible1 {
+	position: absolute;
+  opacity: 1;
+  z-index: 25;
+  animation-name: art;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes art{
+  0% { opacity: 0; }
+  45% {opacity: 0; }
+  47% {opacity: 1; }
+  67% {opacity: 1; }
+  69% {opacity: 0; }
+  100% {opacity: 0; }
+}
+
+
+.work {
+  position: absolute;
+  opacity: 1;
+  z-index: 20;
+  animation-name: wor;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes wor{
+  0% { opacity: 1; }
+  50% {opacity: 1; }
+  57% {opacity: 0; }
+  100% {opacity: 0; }
+}
+
+
+.box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+}
+

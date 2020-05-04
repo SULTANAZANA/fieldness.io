@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Submit your email</title>
+    <!-- You can add the description by uncommenting -->
+    <!-- <meta name="description" content=""> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script type="text/javascript">
+        function changeView() {
+            mainWindow = document.getElementById("mainWindow");
+            mainWindow.innerHTML = "You have submitted successfully";
+            mainWindow.className += "centered";
+        }
+        var submitted = false;
+    </script>
+    <div id="mainWindow">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"
+        onload="if(submitted) {changeView();}"></iframe>
+        <!-- This is the form element. What we do is take this data and send it to our Google Forms' endpoint -->
+        <form id="emailForm" action="" name="emailForm" method="post" onsubmit="submitted = true;" target="hidden_iframe">
+            <div class="centered" id="emailDiv">
+                <label for="emailInput">Email : </label>
+                <!-- Make sure the input element's 'name' attribute is the same as the name attribute in the Google Form -->
+                <input id="emailInput" type="email" autocomplete="email" tabindex="0" aria-label="Your Email"
+                    name="entry.1136563555" value="" placeholder="Your Email"
+                    required>
+            </div>
+            <div class="centered" id="submitDiv" style="transform: translate(0,15px);">
+                <input id="submitButton" type="submit" name="submit" value="Submit" aria-label="Submit">
+            </div>
+        </form>
+    </div>
+    <style>
+        .centered {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <script type="text/javascript">
+        // You need to change the formID here if you change the form
+        var formId = "1FAIpQLScrfLbM4DLHbcD0y9bIiJM18a9EprfCv2QL6zg5OndLUxXSZQ";
+        document.forms.emailForm.action = "https://docs.google.com/forms/d/e/" + formId + "/formResponse";
+    </script>
+</body>
+
+</html>
