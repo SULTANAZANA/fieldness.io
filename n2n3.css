@@ -32,7 +32,9 @@
 .bgtrans2{
 	transform: rotate(-9deg);
 }
-
+.bottom{
+	position: bottom;
+}
 
 .flier {
 	pointer-events: none;
