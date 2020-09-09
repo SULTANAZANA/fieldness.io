@@ -13,6 +13,11 @@
   
 }
 
+button{
+	height: 30px;
+	background-color: rgba(212, 255, 58, 0.678)
+
+}
 
 .wrapps {
 	display: grid;
@@ -56,6 +61,95 @@
   z-index: 1;
 }
 
+#myDIV {
+	display: none;
+	width: 100%;
+	padding: 50px 0;
+	line-height: 1em;
+	text-align: center;
+	background-color: rgba(230, 226, 173, 0.295);
+	margin-top: 20px;
+}
+
+#dapp {
+	display: none;
+	width: 100%;
+	padding: 50px 0;
+	line-height: 1em;
+	text-align: center;
+	background-color: rgba(230, 226, 173, 0.295);
+	margin-top: 20px;
+}
+
+#landscape {
+	display: none;
+	width: 100%;
+	padding: 50px 0;
+	line-height: 1em;
+	text-align: center;
+	background-color: rgba(230, 226, 173, 0.295);
+	margin-top: 20px;
+}
+
+#whatis {
+	display: none;
+	width: 100%;
+	padding: 50px 0;
+	line-height: 1em;
+	text-align: center;
+	background-color: rgba(230, 226, 173, 0.295);
+	margin-top: 20px;
+}
+
+#why {
+	display: none;
+	width: 100%;
+	padding: 50px 0;
+	line-height: 1em;
+	text-align: center;
+	background-color: rgba(230, 226, 173, 0.295);
+	margin-top: 20px;
+}
+
+#onemin {
+	display: none;
+	width: 100%;
+	padding: 50px 0;
+	line-height: 1em;
+	text-align: center;
+	background-color: rgba(230, 226, 173, 0.295);
+	margin-top: 20px;
+}
+#morethan {
+	display: none;
+	width: 100%;
+	padding: 50px 0;
+	line-height: 1em;
+	text-align: center;
+	background-color: rgba(115, 250, 255, 0.295);
+	margin-top: 20px;
+}
+
+#where {
+	display: none;
+	width: 100%;
+	padding: 50px 0;
+	line-height: 1em;
+	text-align: center;
+	background-color: rgba(115, 250, 255, 0.295);
+	margin-top: 20px;
+}
+
+
+
+.threee{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	border: 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+
 .five{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -74,6 +168,11 @@
 	height: 20vw;
   }
   
+.button{
+	position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
   
 .elements{
 	position: relative;	
