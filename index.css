@@ -27,18 +27,34 @@ button{
 	padding: 10vw;
 }
 
+.def2 {
+	padding: 40px;
+	background-color: rgba(82, 0, 82, 0.301);
+  }
+  
+
 .def {
 	padding: 40px;
+	line-height: 2em;
 }
-.def2 {
-  padding: 40px;
-  background-color: #06004167;
-}
+
+
+
+
 .def3 {
 	padding-top: 1%;
 	padding-left: 20%;
 	padding-right: 20%;
 	text-align: justify;
+	line-height: 2em;
+}
+
+.bacgk{
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+	padding-right: 40px;
+	text-align: right;
+	z-index: -20;
 }
 
 .ness{
@@ -65,7 +81,7 @@ button{
 	display: none;
 	width: 100%;
 	padding: 50px 0;
-	line-height: 2em;
+	line-height: 1em;
 	text-align: center;
 	background-color: rgba(230, 226, 173, 0.295);
 	margin-top: 20px;
@@ -75,7 +91,7 @@ button{
 	display: none;
 	width: 100%;
 	padding: 50px 0;
-	line-height: 2em;
+	line-height: 1em;
 	text-align: center;
 	background-color: rgba(230, 226, 173, 0.295);
 	margin-top: 20px;
@@ -85,7 +101,7 @@ button{
 	display: none;
 	width: 100%;
 	padding: 50px 0;
-	line-height: 2em;
+	line-height: 1em;
 	text-align: center;
 	background-color: rgba(230, 226, 173, 0.295);
 	margin-top: 20px;
@@ -220,6 +236,17 @@ animation-iteration-count: infinite;
 	line-height: 1.1;
 }
 
+.prefeels{
+	display: grid;
+  grid-template-columns: 1fr;
+  padding: 3vw;
+  grid-auto-rows: minmax(auto, auto); 
+  line-height: 0.5;
+  text-align: right;
+  text-align: justify;
+}
+
+
 .feels{
 	display: grid;
   grid-template-columns: 3fr 1fr;
@@ -228,8 +255,8 @@ animation-iteration-count: infinite;
   line-height: 0.5;
   text-align: right;
   text-align: justify;
+  
 }
-
 
 
 .feelsimg{
