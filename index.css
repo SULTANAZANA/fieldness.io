@@ -1,5 +1,5 @@
 a:link {
-	color: green;
+	color: rgb(204, 140, 183);
 	background-color: transparent;
 	text-decoration: none;
   }
@@ -37,8 +37,7 @@ a:link {
 	display: grid;
 	grid-template-columns: 1fr;
 	z-index: -50;
-	position: absolute;
-	
+	position: absolute;	
 }
 
 .everything{
