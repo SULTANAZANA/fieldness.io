@@ -29,7 +29,7 @@ a:link {
 	grid-template-columns: 1fr;
 	z-index: -50;
 	position: absolute;
-	
+}
 
 .bg1{
 	background-attachment: fixed;
