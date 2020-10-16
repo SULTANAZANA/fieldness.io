@@ -1,3 +1,36 @@
+a:link {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:visited {
+	color: pink;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: #FFDD30;
+	background-color: transparent;
+	text-decoration: underline;
+  }
+  
+  a:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+  }
+
+.bg1{
+	background-attachment: fixed;
+	position: absolute;
+	display: grid;
+	grid-template-columns: 1fr;
+	z-index: -50;
+	position: absolute;
+	
+
 .bg1{
 	background-attachment: fixed;
 	position: absolute;
