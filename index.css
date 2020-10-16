@@ -22,14 +22,7 @@ a:link {
 	text-decoration: underline;
   }
 
-.bg1{
-	background-attachment: fixed;
-	position: absolute;
-	display: grid;
-	grid-template-columns: 1fr;
-	z-index: -50;
-	position: absolute;
-}
+
 
 .bg1{
 	background-attachment: fixed;
